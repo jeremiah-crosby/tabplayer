@@ -1,14 +1,14 @@
 use glib::subclass::InitializingObject;
-use gtk::prelude::*;
 use gtk::subclass::prelude::*;
-use gtk::{glib, Button, CompositeTemplate};
+use gtk::{glib, CompositeTemplate};
+use super::super::Measure;
 
 // Object holding the state
 #[derive(CompositeTemplate, Default)]
 #[template(resource = "/com/jeremiahcrosby/tabplayer/mainwindow.ui")]
 pub struct MainWindow {
     #[template_child]
-    pub button: TemplateChild<Button>,
+    pub measure: TemplateChild<Measure>,
 }
 
 // The central trait for subclassing a GObject
@@ -33,12 +33,6 @@ impl ObjectImpl for MainWindow {
     fn constructed(&self) {
         // Call "constructed" on parent
         self.parent_constructed();
-
-        // Connect to "clicked" signal of `button`
-        self.button.connect_clicked(move |button| {
-            // Set the label to "Hello World!" after the button has been clicked on
-            button.set_label("Hello World!");
-        });
     }
 }
 

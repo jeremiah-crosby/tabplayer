@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="TabPlayerMeasure" parent="GtkWidget">
+    <property name="layout-manager">
+      <object class="GtkBinLayout"/>
+    </property>
+    <child>
+      <object class="GtkDrawingArea" id="drawing_area">
+        <property name="content-height">50</property>
+        <property name="content-width">150</property>
+      </object>
+    </child>
+  </template>
+</interface>

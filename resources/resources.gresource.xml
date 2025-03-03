@@ -2,5 +2,6 @@
 <gresources>
   <gresource prefix="/com/jeremiahcrosby/tabplayer/">
     <file compressed="true" preprocess="xml-stripblanks">mainwindow.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">measure.ui</file>
   </gresource>
 </gresources>

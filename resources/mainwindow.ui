@@ -3,8 +3,7 @@
   <template class="TabPlayerAppWindow" parent="GtkApplicationWindow">
     <property name="title">Tab Player</property>
     <child>
-      <object class="GtkButton" id="button">
-        <property name="label">Press me!</property>
+      <object class="TabPlayerMeasure" id="measure">
         <property name="margin-top">12</property>
         <property name="margin-bottom">12</property>
         <property name="margin-start">12</property>
